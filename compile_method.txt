@@ -1,0 +1,13 @@
+// 컴파일 하는 방법
+cl.exe main.c /Fe:main.exe /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include\glib-2.0" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include" /link /LIBPATH:"C:\Program Files\gstreamer\1.0\msvc_x86_64\lib" gstreamer-1.0.lib gobject-2.0.lib glib-2.0.lib intl.lib
+main.c 파일이 수정될 때마다 이 과정을 반복해야 합니다.
+cl.exe onesec_main.c /Fe:onesec_main.exe /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include\glib-2.0" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include" /link /LIBPATH:"C:\Program Files\gstreamer\1.0\msvc_x86_64\lib" gstreamer-1.0.lib gobject-2.0.lib glib-2.0.lib intl.lib
+
+//컴파일2
+cl.exe onesec_main.c /Fe:onesec_main.exe /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include\gstreamer-1.0" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\include\glib-2.0" /I"C:\Program Files\gstreamer\1.0\msvc_x86_64\lib\glib-2.0\include" /link /LIBPATH:"C:\Program Files\gstreamer\1.0\msvc_x86_64\lib" gstreamer-1.0.lib gobject-2.0.lib glib-2.0.lib intl.lib gstapp-1.0.lib
+//터미널에서 실행
+.\onesec_main.exe (FPS) (Start time)
+
+.\onesec_main.exe (10) (2)
+
+
